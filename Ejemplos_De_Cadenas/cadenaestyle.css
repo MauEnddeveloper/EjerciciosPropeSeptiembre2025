@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*REGLA PARA APLICARLA A TODOS LOS H1 DE LA PAGINA*/
 h1{
     color: rgb(220, 220, 220);
@@ -37,4 +38,42 @@ input{
 }
 input:focus{
     border: 2px solid #4169E1;
+=======
+/*REGLA PARA APLICARLA A TODOS LOS H1 DE LA PAGINA*/
+h1{
+    color: rgb(220, 220, 220);
+}
+h2{
+    color: #DAA520;
+}
+body{
+    color: #000;
+    background-color: #808080;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    background-color: #4169E1;
+}
+button:hover{
+    background-color: #2fccc0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 15px;
+>>>>>>> eb80648835da3fff444fc39dbecd29d3f5ed12d3
 }
