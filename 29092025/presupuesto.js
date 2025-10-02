@@ -15,3 +15,26 @@ function mostrarPresupuesto(){
 btnDistribuirPpto=document.getElementById("distribuir");
 //Relacionar el boton con el evento
 btnDistribuirPpto.addEventListener("click", mostrarPresupuesto);
+
+function mostrarTabla() {
+      // Obtener el número del input
+      let numero = parseInt(document.getElementById("cajaNumero").value, 10);
+
+      let texto = "";
+
+      // Validar que se haya escrito un número
+      if (isNaN(numero)) {
+        texto = "Por favor escribe un número válido.";
+      } else {
+        // Generar la tabla del número elegido
+        for (let i = 1; i <= 10; i++) {
+          texto += numero + " x " + i + " = " + (numero * i) + "\n";
+        }
+      }
+
+      // Mostrar en el textarea
+      document.getElementById("cajaResultado").value = texto;
+    }
+
+    // Relacionar el botón con el evento
+    document.getElementById("btnMostrar").addEventListener("click", mostrarTabla);
